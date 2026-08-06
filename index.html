@@ -3,43 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Conlog 개인정보처리방침</title>
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+    :root {
+      --conlog-pink: #f43f72;
+      --text-color: #222;
+      --sub-color: #777;
+      --soft-pink: #fff1f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       max-width: 760px;
       margin: 0 auto;
       padding: 32px 20px;
       font-family: Arial, sans-serif;
       line-height: 1.7;
-      color: #222;
+      color: var(--text-color);
     }
-    h1 { color: #f43f72; }
-    h2 { margin-top: 28px; }
+
+    .brand {
+      margin: 0 0 8px;
+      color: var(--conlog-pink);
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--conlog-pink);
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .date {
+      color: var(--sub-color);
+      font-size: 14px;
+    }
+
+    .box {
+      padding: 16px;
+      border: 1px solid #ffd1df;
+      border-radius: 12px;
+      background: var(--soft-pink);
+    }
   </style>
 </head>
+
 <body>
-  <h1>Conlog 개인정보처리방침</h1>
-  <p>시행일: 2026년 8월 4일</p>
+  <div class="brand">Conlog</div>
+
+  <h1>개인정보처리방침</h1>
+
+  <p class="date">시행일: 2026년 8월 6일</p>
 
   <h2>1. 수집하는 정보</h2>
+
   <p>
     Conlog는 로그인과 서비스 제공을 위해 이메일 주소 및 계정 식별자를 처리합니다.
     사용자가 입력한 공연 기록, 아티스트, 공연장, 메모, 이미지 및 지출 정보가 저장될 수 있습니다.
   </p>
 
   <h2>2. 이용 목적</h2>
+
   <p>
     로그인 확인, 공연 기록 저장 및 동기화, 캘린더·통계·검색 기능 제공,
     서비스 오류 확인과 보안 유지를 위해 이용합니다.
   </p>
 
   <h2>3. 이미지 및 저장 데이터</h2>
+
   <p>
     사용자가 업로드한 이미지는 서비스 표시를 위해 Supabase Storage에 저장됩니다.
-    사용자가 삭제하거나 회원 탈퇴를 요청하면 관련 데이터와 파일을 삭제합니다.
+    사용자가 직접 삭제하거나 회원 탈퇴를 요청하면 관련 데이터와 파일을 삭제합니다.
   </p>
 
+  <div class="box">
+    Conlog는 사용자가 입력하거나 업로드한 데이터를 서비스 제공 목적 외의 용도로
+    사용하지 않습니다.
+  </div>
+
   <h2>4. 보관 및 삭제</h2>
+
   <p>
     회원이 서비스를 이용하는 동안 정보를 보관합니다.
     회원 탈퇴 또는 삭제 요청 시 관련 개인정보와 기록을 삭제합니다.
@@ -47,19 +109,23 @@
   </p>
 
   <h2>5. 제3자 서비스</h2>
+
   <p>
     Conlog는 인증과 데이터 저장을 위해 Supabase를 사용합니다.
     광고가 활성화된 경우 Google AdMob을 사용할 수 있습니다.
   </p>
 
   <h2>6. 이용자의 권리</h2>
+
   <p>
     사용자는 자신의 개인정보에 대한 열람, 수정 및 삭제를 요청할 수 있습니다.
+    관련 요청은 앱 내 문의 기능을 이용해 주세요.
   </p>
 
   <h2>7. 문의</h2>
+
   <p>
-    개인정보 관련 문의는 앱 내 문의 기능을 이용해 주세요.
+    개인정보 관련 문의는 Conlog 앱 내 문의 기능을 이용해 주세요.
   </p>
 </body>
 </html>
