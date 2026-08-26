@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
   <title>Conlog 이용약관</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-
     :root {
       --conlog-pink: #f43f72;
       --text-color: #222;
       --sub-color: #777;
       --soft-pink: #fff1f5;
+      --border: #ffd1df;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       max-width: 760px;
       margin: 0 auto;
-      padding: 32px 20px;
+      padding: 32px 20px 64px;
       font-family: Arial, sans-serif;
       line-height: 1.7;
       color: var(--text-color);
@@ -38,32 +38,23 @@
       line-height: 1;
     }
 
-    h1 {
-      margin: 0 0 12px;
-      color: var(--conlog-pink);
-      font-size: 28px;
-    }
+    h1 { margin: 0 0 4px; color: var(--conlog-pink); font-size: 28px; }
+    h2 { margin-top: 32px; font-size: 20px; }
+    p, li { font-size: 16px; }
+    li { margin-bottom: 4px; }
 
-    h2 {
-      margin-top: 28px;
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-    .date {
-      color: var(--sub-color);
-      font-size: 14px;
-    }
+    .date { color: var(--sub-color); font-size: 14px; margin: 0; }
+    .app-id { color: #555; font-size: 14px; margin: 4px 0 16px; }
+    code { background: #f5f5f5; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
 
     .box {
       padding: 16px;
-      border: 1px solid #ffd1df;
+      border: 1px solid var(--border);
       border-radius: 12px;
       background: var(--soft-pink);
     }
+
+    a { color: var(--conlog-pink); }
   </style>
 </head>
 
@@ -72,7 +63,10 @@
 
   <h1>이용약관</h1>
 
-  <p class="date">시행일: 2026년 8월 6일</p>
+  <p class="date">시행일: 2026년 8월 26일</p>
+  <p class="app-id">
+    대상 앱: Conlog (공연 기록 다이어리) &middot; Android 패키지명 <code>com.conlog.app</code>
+  </p>
 
   <h2>1. 서비스의 목적</h2>
 
@@ -86,45 +80,149 @@
     목적으로 합니다.
   </div>
 
-  <h2>2. 회원의 책임</h2>
+  <h2>2. 이용 자격</h2>
+
+  <p>
+    Conlog는 만 14세 이상인 분이 이용할 수 있습니다.
+    회원 가입 시 정확한 정보를 입력해야 하며,
+    타인의 정보로 가입하거나 계정을 공유해서는 안 됩니다.
+  </p>
+
+  <h2>3. 회원의 책임</h2>
 
   <p>
     회원은 본인의 계정과 비밀번호를 안전하게 관리해야 하며,
     타인의 권리를 침해하거나 법령에 위반되는 정보를 등록해서는 안 됩니다.
   </p>
 
-  <h2>3. 기록과 이미지</h2>
+  <h2>4. 회원이 등록한 기록과 이미지</h2>
 
   <p>
-    회원이 등록한 공연 기록과 이미지는 회원의 관리 책임 아래 저장됩니다.
+    회원이 등록한 공연 기록과 이미지에 대한 권리는 회원에게 있습니다.
+    Conlog는 이 정보를 회원 본인에게 보여주고 기기 간에 동기화하는 목적으로만
+    이용하며, 광고에 활용하거나 다른 목적으로 사용하지 않습니다.
+  </p>
+
+  <p>
     회원은 업로드하는 이미지와 입력 정보에 필요한 권리를 보유해야 합니다.
   </p>
 
-  <h2>4. 서비스 변경 및 중단</h2>
+  <h2>5. 무료 이용과 광고</h2>
+
+  <p>
+    Conlog의 기본 기능은 무료로 제공되며, 무료 이용 중에는 광고가 표시됩니다.
+    무료 이용 시 기록 하나에 첨부할 수 있는 사진 수 등 일부 기능에
+    제한이 있을 수 있습니다.
+  </p>
+
+  <h2>6. 유료 구독 (Conlog 프리미엄)</h2>
+
+  <p>
+    프리미엄 구독을 이용하면 광고 제거, 사진 첨부 제한 해제,
+    최애 아티스트 기능, 연도별 결산 카드 등 고급 통계를 이용할 수 있습니다.
+  </p>
+
+  <div class="box">
+    <p style="margin:0 0 8px;">
+      <strong>결제와 해지는 App Store 또는 Google Play를 통해 이루어집니다.</strong>
+    </p>
+    <ul style="margin:0; padding-left: 20px;">
+      <li>구독 상품의 가격과 이용 기간은 앱의 구매 화면과 각 스토어에 표시됩니다.</li>
+      <li>구독은 해지하지 않으면 기간이 끝날 때 자동으로 갱신됩니다.</li>
+      <li>해지는 각 스토어의 <strong>구독 관리</strong>에서 하실 수 있으며,
+        해지해도 이미 결제된 기간이 끝날 때까지는 계속 이용할 수 있습니다.</li>
+      <li>결제·환불·자동 갱신에 관한 사항은 해당 스토어의 정책을 따릅니다.</li>
+    </ul>
+  </div>
+
+  <p>
+    기기를 바꾸거나 앱을 다시 설치한 경우
+    앱의 <strong>구매 내역 복원</strong>으로 구독을 되살릴 수 있습니다.
+  </p>
+
+  <p>
+    회원 탈퇴를 하더라도 구독은 자동으로 해지되지 않습니다.
+    구독을 원하지 않으시면 탈퇴 전에 스토어에서 먼저 해지해 주세요.
+  </p>
+
+  <h2>7. 데이터 보관과 백업</h2>
+
+  <p>
+    Conlog는 회원의 기록을 안정적으로 보관하기 위해 노력합니다.
+    다만 기기 고장, 통신 장애, 계정 분실 등으로 기록을 이용하지 못하는 상황에
+    대비해, 앱에서 제공하는 <strong>백업 내보내기</strong> 기능을 함께 이용하시기를
+    권장합니다.
+  </p>
+
+  <h2>8. 서비스 변경 및 중단</h2>
 
   <p>
     서비스 운영상 필요한 경우 기능을 변경하거나 점검을 진행할 수 있습니다.
     예기치 못한 장애가 발생한 경우 서비스가 일시적으로 중단될 수 있습니다.
   </p>
 
-  <h2>5. 이용 제한</h2>
+  <p>
+    서비스 전체를 종료하는 경우에는 이 페이지와 앱을 통해 미리 안내하고,
+    회원이 기록을 백업할 수 있는 기간을 두겠습니다.
+  </p>
+
+  <h2>9. 이용 제한</h2>
 
   <p>
     타인의 계정을 사용하거나 서비스 운영을 방해하는 행위가 확인되면
     이용이 제한될 수 있습니다.
   </p>
 
-  <h2>6. 약관의 변경</h2>
+  <h2>10. 이용계약의 종료</h2>
+
+  <p>
+    회원은 언제든지 앱의 <strong>더보기 &rarr; 회원 탈퇴</strong>에서
+    이용계약을 종료할 수 있습니다.
+    회원 탈퇴를 하면 계정과 기록이 즉시 삭제되며 복구할 수 없습니다.
+  </p>
+
+  <p>
+    자세한 내용은
+    <a href="./account-deletion.html">계정 및 데이터 삭제</a> 안내를 참고해 주세요.
+  </p>
+
+  <h2>11. 책임의 범위</h2>
+
+  <p>
+    Conlog는 회원이 등록한 기록의 내용에 대해서는 책임지지 않습니다.
+    천재지변, 통신 장애 등 Conlog가 통제할 수 없는 사유로 발생한 손해에 대해서는
+    책임이 제한될 수 있습니다.
+  </p>
+
+  <h2>12. 개인정보</h2>
+
+  <p>
+    개인정보의 처리에 관한 사항은
+    <a href="./index.html">개인정보처리방침</a>에서 확인하실 수 있습니다.
+  </p>
+
+  <h2>13. 약관의 변경</h2>
 
   <p>
     법령 또는 서비스 운영에 따라 약관을 변경할 수 있으며,
-    변경 내용은 이 페이지에 게시합니다.
+    변경 내용과 시행일은 이 페이지에 게시합니다.
+    변경된 약관에 동의하지 않으시는 경우 회원 탈퇴를 하실 수 있습니다.
   </p>
 
-  <h2>7. 문의</h2>
+  <h2>14. 준거법</h2>
 
   <p>
-    서비스 이용 관련 문의는 Conlog 앱 내 문의 기능을 이용해 주세요.
+    본 약관은 대한민국 법령에 따라 해석되며,
+    서비스 이용과 관련하여 분쟁이 발생한 경우 상호 협의하여 해결합니다.
   </p>
+
+  <h2>15. 문의</h2>
+
+  <div class="box">
+    <p style="margin:0;">
+      서비스 이용 관련 문의:
+      <a href="mailto:veolry.daily@gmail.com?subject=%5BConlog%5D%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%AC%B8%EC%9D%98">veolry.daily@gmail.com</a>
+    </p>
+  </div>
 </body>
 </html>
