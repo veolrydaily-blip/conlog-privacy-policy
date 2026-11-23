@@ -3,149 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-
   <title>Conlog 계정 및 데이터 삭제</title>
-
   <style>
-    :root {
-      --conlog-pink: #f43f72;
-      --text-color: #222;
-      --soft-pink: #fff1f5;
-    }
-
     * { box-sizing: border-box; }
-
     body {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: var(--text-color);
+      max-width: 760px; margin: 0 auto; padding: 32px 20px 56px;
+      font: 16px/1.7 system-ui, sans-serif; color: #222; background: #fff;
+      overflow-wrap: anywhere;
     }
-
-    .brand {
-      color: var(--conlog-pink);
-      font-family: 'Nanum Pen Script', cursive;
-      font-size: 48px;
-      line-height: 1;
-      margin: 0 0 8px;
-    }
-
-    h1 { color: var(--conlog-pink); font-size: 28px; margin-bottom: 4px; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    p, li { font-size: 16px; }
-    .date { color: #777; font-size: 14px; }
-
-    .app-id {
-      color: #555;
-      font-size: 14px;
-      margin: 0 0 16px;
-    }
-
-    code { background: #f5f5f5; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
-
-    .box {
-      padding: 16px;
-      border-radius: 12px;
-      background: var(--soft-pink);
-      border: 1px solid #ffd1df;
-    }
-
-    ol.steps { padding-left: 20px; }
-    ol.steps li { margin-bottom: 6px; }
-
-    a { color: var(--conlog-pink); }
+    .brand { margin: 0; color: #b51c4d; font-size: 40px; font-weight: 800; }
+    h1 { margin: 0 0 4px; color: #b51c4d; font-size: 28px; }
+    h2 { margin: 28px 0 8px; font-size: 20px; }
+    p, ol, ul { margin: 0 0 12px; }
+    ol, ul { padding-left: 1.4em; }
+    li + li { margin-top: 4px; }
+    .meta { color: #595959; font-size: 14px; }
+    .box { padding: 14px 16px; border: 1px solid #eccbd7; border-radius: 12px; background: #fff1f5; }
+    a { color: #b51c4d; text-underline-offset: .18em; }
+    footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eccbd7; }
   </style>
 </head>
-
 <body>
-  <div class="brand">Conlog</div>
+  <header>
+    <p class="brand">Conlog</p>
+    <h1>계정 및 데이터 삭제</h1>
+    <p class="meta">시행일: <time datetime="2026-11-23">2026년 11월 23일</time></p>
+    <p class="meta">대상 앱: Conlog (공연 기록 다이어리) · Android 패키지명 <code>com.conlog.app</code></p>
+  </header>
 
-  <h1>계정 및 데이터 삭제</h1>
+  <main>
+    <h2>1. 앱에서 계정 삭제하기</h2>
+    <ol>
+      <li>Conlog 앱을 열고 하단의 <strong>더보기</strong> 탭을 누릅니다.</li>
+      <li><strong>로그인 계정 → 회원 탈퇴</strong>를 선택합니다.</li>
+      <li>삭제 안내를 확인한 뒤 탈퇴를 요청합니다.</li>
+    </ol>
+    <p class="box">탈퇴를 요청하면 서버에서 삭제 절차를 시작합니다. <strong>삭제가 완료된 계정과 기록은 복구할 수 없습니다.</strong> 오류가 표시되면 앱의 안내에 따라 다시 시도하거나 운영자에게 문의해 주세요.</p>
 
-  <p class="date">시행일: 2026년 8월 28일</p>
-  <p class="app-id">
-    대상 앱: Conlog (공연 기록 다이어리) &middot; Android 패키지명 <code>com.conlog.app</code>
-  </p>
+    <h2>2. 앱 없이 삭제 요청하기</h2>
+    <p>앱을 이미 삭제했거나 로그인할 수 없다면 아래 주소로 계정 삭제를 요청할 수 있습니다.</p>
+    <p><a href="mailto:veolry.daily@gmail.com?subject=%5BConlog%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">veolry.daily@gmail.com에 계정 삭제 요청하기</a></p>
+    <p>메일에 요청 내용과 가입에 사용한 이메일 주소를 적어 주세요. 가능하면 가입에 사용한 주소에서 보내 주세요. 이메일 주소를 안다는 이유만으로 계정을 삭제하지 않으며, 필요한 경우 본인 확인 방법을 별도로 안내합니다. 비밀번호나 신분증은 이메일에 첨부하지 마세요.</p>
+    <p>이메일 요청은 접수 및 본인 확인을 거쳐 처리합니다. 처리 결과 또는 요청을 처리하지 못한 사유는 적용되는 기한에 맞춰 안내합니다.</p>
 
-  <h2>앱에서 삭제하기</h2>
+    <h2>3. 삭제 대상</h2>
+    <ul>
+      <li>로그인 계정 정보</li>
+      <li>공연 기록, 지출 내역, 메모, 별점, 타임테이블 및 셋리스트</li>
+      <li>최애 아티스트 목록, 아티스트 프로필, 공연 모음</li>
+      <li>직접 추가한 장르·지출 항목 및 표기 통합 설정</li>
+      <li>계정에 연결된 포스터·티켓·좌석 시야 사진과 미리보기 이미지</li>
+    </ul>
+    <p>탈퇴 과정에서 현재 기기의 앱 내부 사본도 정리합니다.</p>
 
-  <ol class="steps">
-    <li>Conlog 앱을 엽니다.</li>
-    <li>화면 아래 <strong>더보기</strong> 탭을 누릅니다.</li>
-    <li><strong>회원 탈퇴</strong>를 누르고 안내에 따라 진행합니다.</li>
-  </ol>
+    <h2>4. 탈퇴 후 별도로 남을 수 있는 정보</h2>
+    <p>앱을 삭제하는 것만으로 서버 계정이나 기록은 삭제되지 않습니다. 회원 탈퇴를 하더라도 사진 앱에 저장한 이미지, 내보낸 백업, 공유한 파일, 다른 기기나 기기 백업에 남아 있는 사본은 해당 위치에서 별도로 관리해야 합니다.</p>
+    <p>삭제 결과를 확인하기 위해 내부 사용자 ID, 요청·완료 시각, 처리 상태, 계정 삭제 여부, 실패 항목과 오류 정보를 기록합니다. 성공 로그는 7일이 지난 뒤 정기 작업으로 삭제하도록 설정되어 있으며, 실패 로그는 원인 확인과 재처리에 사용합니다.</p>
+    <!-- 게시 전: 실패 로그의 최종 보관 기한과 정리 기준을 확정해
+         개인정보처리방침과 이 문서에 동일하게 반영하세요. -->
+    <p>법령에 따라 보관할 필요가 있는 정보나 구매한 스토어가 별도로 보관하는 거래 정보는 해당 보관 기준을 따릅니다.</p>
 
-  <div class="box">
-    회원 탈퇴를 완료하면 계정과 기록이 <strong>즉시 삭제되며, 복구할 수 없습니다.</strong>
-  </div>
+    <h2>5. 스토어 구독은 별도로 해지해 주세요</h2>
+    <p>Conlog에서 탈퇴해도 App Store 또는 Google Play 구독이 자동으로 해지되지는 않습니다. 다음 결제를 원하지 않으면 구매한 스토어의 구독 관리에서 자동 갱신을 해지해 주세요.</p>
 
-  <h2>앱 없이 삭제 요청하기</h2>
+    <h2>6. 문의</h2>
+    <p class="box">계정 삭제와 처리 결과 문의: <a href="mailto:veolry.daily@gmail.com">veolry.daily@gmail.com</a></p>
+  </main>
 
-  <p>
-    앱을 이미 삭제하셨거나 로그인할 수 없는 경우,
-    아래 이메일로 삭제를 요청하실 수 있습니다.
-  </p>
-
-  <p>
-    <a href="mailto:veolry.daily@gmail.com?subject=%5BConlog%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">veolry.daily@gmail.com</a>
-  </p>
-
-  <p>
-    본인 확인을 위해 <strong>가입에 사용하신 이메일 주소</strong>를 함께 적어 주세요.
-    확인 후 처리해 드립니다.
-  </p>
-
-  <h2>삭제되는 정보</h2>
-
-  <ul>
-    <li>로그인 계정 정보</li>
-    <li>공연 기록 (공연명, 일시, 장소, 좌석, 메모, 지출 내역, 별점, 타임테이블,
-      세트리스트)</li>
-    <li>최애 아티스트 목록과 아티스트 프로필 사진</li>
-    <li>직접 추가한 장르 등 입력 편의를 위해 저장된 정보</li>
-    <li>업로드한 포스터·티켓 사진 원본과 미리보기 이미지</li>
-  </ul>
-
-  <p>
-    기기에 저장된 사본(캐시)은 회원 탈퇴 시 함께 삭제되며,
-    앱을 삭제하면 남지 않습니다.
-  </p>
-
-  <h2>처리 기간</h2>
-
-  <p>
-    삭제 요청은 즉시 처리됩니다.
-  </p>
-
-  <p>
-    이메일로 요청하신 경우, 본인 확인 절차를 거쳐
-    영업일 기준 7일 이내에 처리해 드립니다.
-  </p>
-
-  <h2>삭제 후에도 남는 정보</h2>
-
-  <p>
-    삭제 처리가 정상적으로 끝났는지 확인하기 위해
-    처리 결과 기록(요청 시각, 처리 상태)을 보관합니다.
-    정상 처리된 기록은 7일 후 자동으로 삭제되며,
-    처리에 실패한 기록은 원인 확인과 재처리를 위해 보관합니다.
-  </p>
-
-  <p>
-    그 밖에 법령에 따라 보관이 필요한 정보가 있는 경우
-    해당 기간이 지난 후 삭제합니다.
-  </p>
-
-  <h2>문의</h2>
-
-  <p>
-    계정 삭제 요청이나 처리 확인이 필요한 경우
-    <a href="mailto:veolry.daily@gmail.com">veolry.daily@gmail.com</a>으로 연락해 주세요.
-  </p>
+  <footer>
+    <a href="./index.html">개인정보처리방침</a> ·
+    <a href="./terms.html">이용약관</a>
+  </footer>
 </body>
 </html>
